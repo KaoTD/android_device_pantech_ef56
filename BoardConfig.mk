@@ -19,13 +19,13 @@ PLATFORM_PATH := device/pantech/ef56
 -include device/pantech/msm8974-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := ef56s
+TARGET_OTA_ASSERT_DEVICE := ef56,ef56s,ef56k,ef56l
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_ef56_defconfig
+TARGET_KERNEL_CONFIG := kd_ef56_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop

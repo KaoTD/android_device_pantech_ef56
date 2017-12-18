@@ -18,16 +18,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ef56 device
 $(call inherit-product, device/pantech/ef56/ef56.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/pantech/ef56/ef56-vendor.mk)
 
-PRODUCT_NAME := cm_ef56
+PRODUCT_NAME := lineage_ef56
 PRODUCT_DEVICE := ef56
 PRODUCT_MANUFACTURER := PANTECH
-PRODUCT_MODEL := IM-A880
+PRODUCT_MODEL := VEGA LTE-A
 
 PRODUCT_BRAND := PANTECH
 TARGET_VENDOR := PANTECH
