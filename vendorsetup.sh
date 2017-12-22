@@ -1,1 +1,1 @@
-add_lunch_combo lineage_ef56-userdebug
+add_lunch_combo viper_ef56-userdebug
